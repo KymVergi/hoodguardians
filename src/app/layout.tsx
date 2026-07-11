@@ -3,7 +3,7 @@ import Providers from "@/components/Providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HoodGuardians — Pixel Forest Defense",
+  title: "HoodGuardians · Tower Forest Defense",
   description:
     "Defend the Grove from waves of the forest. Hatch your guardian, place your defense, and claim your reward on-chain on Robinhood Chain.",
 };
