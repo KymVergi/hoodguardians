@@ -1,0 +1,228 @@
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(180deg, rgba(10, 15, 8, 0.55) 0%, rgba(10, 15, 8, 0.88) 100%),
+    url("/assets/bg/forest.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: saturate(0.9);
+}
+
+.nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 28px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandLogo {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+}
+
+.brand {
+  font-size: 14px;
+  color: var(--hg-accent);
+  letter-spacing: 1px;
+}
+
+.heroBody {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px 60px;
+  gap: 22px;
+}
+
+.title {
+  font-size: clamp(22px, 5vw, 40px);
+  color: var(--hg-text);
+  line-height: 1.5;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
+  max-width: 900px;
+}
+
+.title span {
+  color: var(--hg-green);
+}
+
+.subtitle {
+  font-size: 12px;
+  color: var(--hg-text-dim);
+  max-width: 560px;
+  line-height: 2;
+}
+
+.ctaRow {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ctaBtn {
+  font-size: 14px;
+  padding: 16px 26px;
+}
+
+.chainBadge {
+  font-size: 9px;
+  color: var(--hg-text-dim);
+  border: 2px solid var(--hg-panel-border);
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 24px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  color: var(--hg-accent);
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 22px;
+}
+
+.cardTitle {
+  font-size: 11px;
+  color: var(--hg-text);
+  margin: 0 0 12px;
+}
+
+.cardBody {
+  font-size: 9px;
+  color: var(--hg-text-dim);
+  line-height: 1.9;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 20px;
+}
+
+.stepNum {
+  font-size: 16px;
+  color: var(--hg-green);
+  min-width: 34px;
+}
+
+.stepBody {
+  font-size: 10px;
+  color: var(--hg-text-dim);
+  line-height: 1.9;
+}
+
+.stepBody b {
+  color: var(--hg-text);
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 20px 60px;
+  font-size: 8px;
+  color: var(--hg-text-dim);
+  line-height: 2;
+}
+
+.footer a {
+  color: var(--hg-accent-2);
+}
+
+.tokenSection {
+  max-width: 720px;
+}
+
+.tokenPanel {
+  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.tokenAddressRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tokenAddress {
+  font-size: 10px;
+  color: var(--hg-text-dim);
+  border: 2px dashed var(--hg-panel-border);
+  padding: 12px 16px;
+  letter-spacing: 1px;
+}
+
+.socialRow {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--hg-panel-border);
+  color: var(--hg-text);
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.1s ease, color 0.1s ease;
+}
+
+.socialLink:hover {
+  background: var(--hg-green);
+  color: #10160d;
+  border-color: var(--hg-green);
+}

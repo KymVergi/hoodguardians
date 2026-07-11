@@ -1,0 +1,29 @@
+.wrap {
+  padding: 16px 18px;
+  min-width: 260px;
+}
+
+.title {
+  font-size: 12px;
+  color: var(--hg-accent);
+  margin: 0 0 12px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--hg-text-dim);
+}
+
+.row:first-child {
+  color: var(--hg-text);
+}
+
+.empty {
+  font-size: 9px;
+  color: var(--hg-text-dim);
+  line-height: 1.7;
+}
